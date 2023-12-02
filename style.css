@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    color: #14213d;
+    color: #ffffff;
 }
 
 h2 {
@@ -29,7 +29,7 @@ a {
 
 .body {
     background-color: white;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .dark-mode {
