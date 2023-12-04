@@ -10,17 +10,20 @@
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 50px;
+            color:white
         }
+        
         p{
             font-size: medium;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+            color:white
         }
 
         a {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: medium;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
         }
 
         h2{ 
@@ -33,32 +36,52 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: medium;
         }
-    
+        
+        /* Background Color to Navigation Bar */
+        .navigation_bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navigation_bar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .navigation_bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .navigation_bar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
     </style>
 
     <body>
-        <h1>Hello, MEOWJEPOI</h1>
+        
+        <div class ="navigation_bar">
+            <!--<a href="index.html" target="_blank" rel="noopener noreferrer">HomePage!</a
+            <br /> -->
+            <a href="https://github.com/DevonBoldt" target="blank" rel="noopener noreferrer" >Github</a>
+            <a href="https://www.linkedin.com/in/devon-boldt-32621a228/" target="blank" rel="noopener noreferrer">Linkedin</a>
+            <a href="https://meritpages.com/Devon-Seong-Boldt/5302809" target="blank" rel="noopener noreferrer">Meritpages</a>
+            <a href="personalProjects.html" target="blank" rel="noopener noreferrer">Projects</a>
+            <a href="contactme.html" target="blank" rel="noopener noreferrer">Contact Me</a>
+            <a href="Random.html" target="blank" rel="noopener noreferrer">Work in progress page</a>   
+        </div>
+        
+        <h1>Welcome</h1>
         <p>My name is Devon Boldt, I am a graduate of JMU with a B.S. in CS!</p>
         <p>Welcome to my webpage, this is kind of a placeholder for future projects and to </p>
-    </body>
-    <body>
-
-        <!--<a href="index.html" target="_blank" rel="noopener noreferrer">HomePage!</a>
-        <br /> -->
-        <a href="https://github.com/DevonBoldt" target="_blank" rel="noopener noreferrer" >My Github!</a>
-        <br />
-        <a href="https://www.linkedin.com/in/devon-boldt-32621a228/" target="_blank" rel="noopener noreferrer">My Linkedin!</a>
-        <br />
-        <a href="https://meritpages.com/Devon-Seong-Boldt/5302809" target="_blank" rel="noopener noreferrer">JMU's MeritPages about me!</a>
-        <br />
-        <a href="personalProjects.html" target="_blank" rel="noopener noreferrer">Projects I'm working on right now!</a>
-        <br>
-        
-        <a href="contactme.html" target="_blank" rel="noopener noreferrer">Contact Me!</a>
-        <br>
-        <a href="Random.html" target="_blank" rel="noopener noreferrer">Work in progress page</a>
-
-
         
     </body>
 </html>
