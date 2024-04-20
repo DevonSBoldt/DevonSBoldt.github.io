@@ -1,29 +1,29 @@
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 50px;
-    color: #000000;
+    color: #141619;
 }
 
 h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 20px;
-    color: #000000;
+    color: #141619;
 }
 
 h3 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 20px;
-    color: #000000;
+    color: #141619;
 }
 
 h4 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 20px;
-    color: #000000;
+    color: #141619;
 }
 
 body { 
@@ -33,18 +33,18 @@ body {
 
 p {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 25px;
 }
 
 a {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 18px;
 }
 
 .body {
-    background-color: white;
+    background-color: #B3B4BD;
     color: rgb(255, 255, 255);
 }
 
