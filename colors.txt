@@ -1,1 +1,7 @@
-Light blue hex: #DBF9FC
+https://shorturl.at/gpvA9
+
+Black:      #141619
+Gray:       #2C2E3A 
+Dark Blue:  #050A44
+Light Blue: #0A21C0
+Light Gray: #B3B4BD
