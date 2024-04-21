@@ -9,14 +9,14 @@
         h1 {
             text-align: center;
             font-family: system-ui, sans-serif;
-            font-size: 50px;
+            font-size: 60px;
             color: #141619;
         }
 
         h2 {
             text-align: center;
             font-family: system-ui, sans-serif;
-            font-size: 25px;
+            font-size: 30px;
             color: #141619;
         }
 
@@ -24,6 +24,21 @@
             text-align: center;
             font-family: system-ui, sans-serif;
             font-size: 15px;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2C2E3A;
+        padding: 10px;
+        }
+
+        .grid-item {
+        background-color: #B3B4BD;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
         }
     </style>
     
@@ -40,6 +55,19 @@
         <div> 
             <h1>Hello, and welcome to my website!</h1>
             <h2>This is a WIP website I will be continually adding onto to act as a better way to demonstrate my webdevelopment development skills</h2>
+        </div>
+        
+        <h1>Featured Work</h1>
+        <div class="grid-container">
+            <div class="grid-item">This Website!</div>
+            <div class="grid-item">ScaleCreator</div>
+        </div>
+
+        <h1>What I'm working on!</h1>
+        <div class="grid-container">
+            <div class="grid-item"><a href="https://aws.amazon.com/certification/certified-cloud-practitioner/">Cloud Practioner @AWS</a></div>
+            <div class="grid-item"><a href="https://aws.amazon.com/certification/certified-developer-associate/">Associate Developer @AWS</a></div>
+            <div class="grid-item"><a href="https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments">PSM @Scrum.org</a></div>
         </div>
         
     </body>
