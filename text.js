@@ -2,7 +2,8 @@ var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    // Large period number changes how much time elapses before typing starts
+    this.period = parseInt(period, 10) || 1500;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -21,6 +22,9 @@ TxtType.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
+    // Delta changes how fast things get typed / deleted
+    // Larger delta = Slower 
+    // Lower delta = Faster
     var delta = 200 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
