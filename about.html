@@ -2,42 +2,99 @@
 <html lang="en">
 <html>
     <head>
-        <title>AboutMe</title>
+        <title>About Me</title>
         <link rel="stylesheet" href="style.css">
     </head>
-        <style> 
-            h1 {
-                text-align: center;
-                font-family: system-ui, sans-serif;
-                font-size: 50px;
-                color: #141619;
-            }
+    <style> 
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 70px;
+            color: #141619;
+            margin-top: 20px;
+        }
 
-            h2 {
-                text-align: center;
-                font-family: system-ui, sans-serif;
-                font-size: 30px;
-                color: #141619;
-            }
+        h2 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 50px;
+            color: #141619;
+            padding-bottom: 5px; /* Optional, to fine-tune the space between headings and text */
+            display: inline-block;
+            width: 100%;
+        }
 
-            body{
-                background-color: #2C2E3A;
-            }
-        </style>
+        body {
+            background-color: #2C2E3A;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0; /* Reduced margin between paragraphs */
+            text-align: justify;
+            padding: 0 15%;
+        }
+
+        .navigation_bar a {
+            color: white;
+            text-align: center;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0 12px;
+            border-radius: 30px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation_bar a:hover {
+            background-color: #04AA6D;
+            color: #fff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+        }
+    </style>
 
     <body>
-        <div class ="navigation_bar">
+        <div class="navigation_bar">
             <a href="index.html" rel="noopener noreferrer">Homepage</a>
             <a href="about.html" rel="noopener noreferrer">About Me</a>
             <a href="contact.html" rel="noopener noreferrer">Contact Me</a> 
             <a href="project.html" rel="noopener noreferrer">Projects</a>
             <a href="todo.html" rel="noopener noreferrer">Things I'm working on</a>  
-            <a href="Random.html" rel="noopener noreferrer">Random</a> 
+            <a href="random.html" rel="noopener noreferrer">Random</a> 
         </div>
-        
+
         <div>
-     
+            <h1>About Me</h1>
+
+            <div class="about-section">
+                <h2>Introduction</h2>
+                <p>
+                    Hello! I’m [Your Name], a passionate individual with a love for [your field/interest]. I enjoy [briefly describe a few key interests or professional skills]. This website is a glimpse into my world, showcasing my projects, interests, and random musings.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2>Background</h2>
+                <p>
+                    I come from [city, country], and I have been involved in [industry or hobby] for the last [X years]. My journey has led me to explore [mention your studies, career, or personal growth], and along the way, I’ve gained invaluable experiences that have shaped who I am today.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2>Hobbies & Interests</h2>
+                <p>
+                    In my free time, I love to engage in activities like [list a few hobbies]. Whether it's [specific hobby] or [another hobby], I always find joy in learning and creating. Through this site, I hope to share more about these passions with you.
+                </p>
+            </div>
         </div>
-        
     </body>
 </html>
