@@ -2,8 +2,7 @@ var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    // Large period number changes how much time elapses before typing starts
-    this.period = parseInt(period, 10) || 1500;
+    this.period = parseInt(period, 10) || 2000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -11,50 +10,42 @@ var TxtType = function(el, toRotate, period) {
 
 TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    var fullTxt = this.toRotate[i];  // Only rotate the dynamic text part
 
     if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    // Delta changes how fast things get typed / deleted
-    // Larger delta = Slower 
-    // Lower delta = Faster
     var delta = 200 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
 
     if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
+        delta = this.period;
+        this.isDeleting = true;
     } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
     }
 
     setTimeout(function() {
-    that.tick();
+        that.tick();
     }, delta);
 };
 
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
+    for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+            new TxtType(elements[i].getElementsByClassName('wrap')[0], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
 };

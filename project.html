@@ -4,47 +4,145 @@
     <head>
         <title>Projects</title>
         <link rel="stylesheet" href="style.css">
-    </head>
         <style>
-            /* h1 {
+            /* Basic Styling */
+            body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+            }
+
+            h1, h2 {
                 text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 50px;
-            } 
- 
+                color: #333;
+            }
+
+            h1 {
+                font-size: 48px;
+                margin-top: 20px;
+            }
+
             h2 {
+                font-size: 24px;
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+
+            p {
                 text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
-            }             */
+                max-width: 800px;
+                margin: 0 auto 20px;
+                line-height: 1.6;
+                font-size: 18px;
+                color: #555;
+            }
+
+            /* Navigation Bar */
+            .navigation_bar {
+                background-color: #333;
+                overflow: hidden;
+                padding: 15px 0;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .navigation_bar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                font-size: 18px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            .navigation_bar a:hover {
+                background-color: #04AA6D;
+                color: white;
+                border-radius: 5px;
+            }
+
+            .navigation_bar a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            /* Projects Section */
+            .projects-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                gap: 20px;
+            }
+
+            .project-card {
+                background-color: white;
+                width: 300px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .project-card h3 {
+                padding: 20px;
+                background-color: #04AA6D;
+                color: white;
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .project-card p {
+                padding: 15px;
+                color: #666;
+                font-size: 16px;
+                text-align: center;
+            }
+
         </style>
+    </head>
 
 <body>
+
+    <!-- Navigation Bar -->
     <div class ="navigation_bar">
-        <a href="index.html" rel="noopener noreferrer">Homepage!</a>
+        <a href="index.html" rel="noopener noreferrer">Homepage</a>
         <a href="about.html" rel="noopener noreferrer">About Me</a>
-        <a href="project.html" rel="noopener noreferrer">Projects</a>
+        <a href="project.html" rel="noopener noreferrer" class="active">Projects</a>
         <a href="contact.html" rel="noopener noreferrer">Contact Me</a> 
         <a href="Random.html" rel="noopener noreferrer">Random</a>   
         <a href="todo.html" rel="noopener noreferrer">Todo</a>  
     </div>
 
-    <h1>Hello and welcome to my projects page!</h1>
-    <h2>These are projects that I have either done in the past or are currently working on!</h2>
-    <h2>Most of these projects can be found on my github, HOWEVER some projects aren't availbile due to either the JMU honor code or being proprietary</h2>
-        <p>
-            As mentioned on the homepage, this is a WIP website that I will be continually working on to showcase and improve my front-end skills
-        </p>
-        <p>
-            The idea for this project came up after I completed my music minor. The end goal is to have a one-time stop for all things music theory.
-            I'm currently working on it in java, but will hopefully have it up on this website! (But that's in the future!)
-        </p>
+    <!-- Header -->
+    <h1>Welcome to My Projects Page!</h1>
+    <h2>Here are some projects I've worked on or am currently developing:</h2>
 
-        <p>
-            This is also a WIP project that will provide a variety of helpful features using the API of a game I play (Valorant)
-            This is the project I have worked the least on, but it will be written in JavaScript and be publically available to download 
-        </p>
+    <!-- Projects Section -->
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Music Theory App</h3>
+            <p>A comprehensive app for learning music theory. Currently being developed in Java. A one-stop platform for all things music theory, launching soon!</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Valorant API Project</h3>
+            <p>A WIP project that utilizes the Valorant API to provide in-game statistics and features. Developed using JavaScript, this tool will be available soon.</p>
+        </div>
+
+    </div>
+
+    <p>Note: Some projects aren't publicly available due to proprietary or academic reasons.</p>
+
 </body>
-   
-    
 </html>
