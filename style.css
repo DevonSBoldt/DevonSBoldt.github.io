@@ -1,63 +1,48 @@
-h1 {
+/* Body */
+body { 
+    margin: 0px;
+    background-color: #2C2E3A; /* Matches the dark background from the navbar */
+    color: #F5F5F5; /* Light text for readability */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
     text-align: center;
-    font-family: system-ui, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #F5F5F5; /* Light text for contrast */
+}
+
+h1 {
     font-size: 50px;
-    color: #141619;
 }
 
 h2 {
-    text-align: center;
-    font-family: system-ui, sans-serif;
+    font-size: 30px;
+}
+
+h3, h4 {
     font-size: 20px;
-    color: #141619;
 }
 
-h3 {
-    text-align: center;
-    font-family: system-ui, sans-serif;
-    font-size: 20px;
-    color: #141619;
-}
-
-h4 {
-    text-align: center;
-    font-family: system-ui, sans-serif;
-    font-size: 20px;
-    color: #141619;
-}
-
-body { 
-    margin: 0px;
-    background-color: #ffffff
-}
-
+/* Paragraphs */
 p {
     text-align: center;
-    font-family: system-ui, sans-serif;
-    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #F5F5F5; /* Matches the light text scheme */
 }
 
+/* Links */
 a {
     text-align: center;
-    font-family: system-ui, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    color: #F5F5F5; /* Light text for links */
+    text-decoration: none;
 }
 
-.body {
-    background-color: #2C2E3A;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-}
-
+/* Block elements */
 .block {
     display: block;
     width: 100%;
@@ -66,11 +51,26 @@ a {
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+    background-color: #333;
+    color: #F5F5F5;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 /* Navigation Bar */
 .navigation_bar {
-    background-color: #333;
+    background-color: #2C2E3A; /* Darker background for nav bar */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     display: flex;
@@ -79,12 +79,12 @@ a {
 }
 
 .navigation_bar a {
-    color: white;
+    color: #F5F5F5; /* Matches the text color of the body */
     text-align: center;
     padding: 12px 24px; /* Adjusted padding for better spacing */
     text-decoration: none;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
     font-weight: 500;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0 12px;
@@ -94,17 +94,14 @@ a {
 }
 
 .navigation_bar a:hover {
-    background-color: #04AA6D;
+    background-color: #00D1FF; /* Cyan on hover */
     color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
     border-radius: 30px;
 }
 
 .navigation_bar a.active {
-    background-color: #04AA6D;
+    background-color: #00D1FF; /* Cyan for the active link */
     color: #fff;
     border-radius: 30px;
 }
-
-
-
