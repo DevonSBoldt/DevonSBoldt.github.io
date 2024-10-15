@@ -3,56 +3,105 @@
 <head>
     <title>Contact Info</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Styling for the contact icons */
-        .contact-icons {
+        /* Styling for the contact icons and details */
+        .contact-section {
             text-align: center;
             margin-top: 50px;
         }
-        .contact-icons a {
+
+        .contact-section a {
             color: #ffffff;
             margin: 0 20px;
-            font-size: 80px; /* Increase the icon size */
-            transition: color 0.3s ease, transform 0.3s ease; /* Add hover effects */
+            font-size: 40px; /* Unified size for both icons and text */
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px; /* Add space below each element */
         }
-        .contact-icons a:hover {
+
+        .contact-section a:hover {
             color: #04AA6D; /* Change color on hover */
-            transform: scale(1.1); /* Add a slight zoom on hover */
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        /* Flexbox container for contact details */
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 60px; /* Space between email and phone */
+            margin-top: 30px;
+            color: #ffffff;
+            font-size: 40px; /* Unified size for text */
+            align-items: center;
+        }
+
+        /* Style for bold labels and normal text */
+        .contact-details strong {
+            font-weight: 700; /* Bold weight for labels */
+        }
+
+        .contact-details span {
+            font-weight: 400; /* Normal weight for email address and phone number */
+        }
+
+        .contact-details a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            color: #04AA6D; /* Hover color */
+        }
+
+        /* Styling for section title */
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            font-size: 50px; /* Larger font for section title */
         }
     </style>
 </head>
 <body> 
-    <div class ="navigation_bar">
+    <div class="navigation_bar">
         <a href="index.html" rel="noopener noreferrer">Homepage</a>
         <a href="about.html" rel="noopener noreferrer">About Me</a>
         <a href="contact.html" rel="noopener noreferrer">Contact Me</a> 
         <a href="project.html" rel="noopener noreferrer">Projects</a>
         <a href="todo.html" rel="noopener noreferrer">Things I'm working on</a>  
-        <a href="Random.html" rel="noopener noreferrer">Random</a> 
+        <a href="random.html" rel="noopener noreferrer">Random</a> 
     </div>
-    <h1 style="text-align: center; color: white;">Contact Me</h1>
+    
+    <h1>Contact Me</h1>
 
-    <div class="contact-icons">
-        <!-- Email Icon -->
+    <div class="contact-section">
+        <!-- Email Icon and Link -->
         <a href="mailto:devonsboldt@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope"></i> Email
         </a>
-        
-        <!-- LinkedIn Icon -->
+
+        <!-- LinkedIn Icon and Link -->
         <a href="https://www.linkedin.com/in/devon-boldt-32621a228/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin"></i> LinkedIn
         </a>
 
-        <!-- GitHub Icon -->
+        <!-- GitHub Icon and Link -->
         <a href="https://github.com/DevonSBoldt" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github"></i> GitHub
         </a>
 
-        <!-- Meritpages Icon -->
+        <!-- Meritpages Icon and Link -->
         <a href="https://meritpages.com/Devon-Seong-Boldt/5302809" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-graduation-cap"></i>
+            <i class="fas fa-graduation-cap"></i> Merit Pages
         </a>
+    </div>
+
+    <!-- Contact Information on the same line -->
+    <div class="contact-details">
+        <p><strong>Email:</strong> <span><a href="mailto:devonsboldt@gmail.com">devonsboldt@gmail.com</a></span></p>
+        <p><strong>Phone:</strong> <span><a href="tel:+1234567890">+1 (234) 567-890</a></span></p>
     </div>
 
     <!-- Adding Font Awesome script for icons -->
