@@ -1,29 +1,49 @@
 /* Body */
-body { 
-    margin: 0px;
-    background-color: #2C2E3A; /* Matches the dark background from the navbar */
-    color: #F5F5F5; /* Light text for readability */
+body {
+    background-color: #1A1B26; /* Slightly lighter dark background for contrast */
+    color: #EAEAEA; /* Light grey text for better readability */
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #E6E6E6; /* Light grey for visibility against dark background */
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #C4C6E7; /* Subtle pastel blue for better visibility */
+    margin-top: 15px;
 }
 
 /* Headings */
-h1, h2, h3, h4 {
+h3, h4 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #F5F5F5; /* Light text for contrast */
 }
 
-h1 {
-    font-size: 50px;
+body {
+    background-color: #1A1B26; /* Slightly lighter dark background for contrast */
+    color: #EAEAEA; /* Light grey text for better readability */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    font-size: 30px;
+p { 
+    text-align: center;
+    font-size: 15px;
+    color: #EAEAEA; /* Matching with overall text color */
 }
 
-h3, h4 {
-    font-size: 20px;
-}
 
 /* Paragraphs */
 p {
@@ -53,13 +73,6 @@ a {
     text-align: center;
     background-color: #333;
     color: #F5F5F5;
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
 }
 
 .navigation_bar {
