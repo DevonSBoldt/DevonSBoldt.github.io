@@ -7,27 +7,39 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
         }
 
         h1 {
-            margin-bottom: 20px;
             text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 60px;
+            color: #E6E6E6;
+            margin-top: 20px;
+        }
+
+        /* Checklist container below navbar */
+        .checklist-container {
+            margin-top: 40px; /* Push the checklist below the navbar */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
 
         .checklist {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 800px; /* Limit width for better readability */
+            margin: 0 auto; /* Center the checklist horizontally */
         }
 
         .checklist-item {
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-size: 2rem;
         }
 
@@ -35,50 +47,56 @@
             margin-right: 20px;
             width: 40px;
             height: 40px;
-            pointer-events: none; /* Makes the checkbox non-clickable */
+            pointer-events: none; /* Make the checkbox non-clickable */
         }
 
         .checklist-item a {
             text-decoration: none;
-            color: #0073e6;
+            color: #00D1FF;
             font-weight: 600;
-            display: flex;
-            align-items: center;
         }
 
         .checklist-item a:hover {
             text-decoration: underline;
         }
 
-        .container {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="navigation_bar">
+        <a href="index.html" class="active">Homepage</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="project.html">Projects</a>
+        <a href="todo.html">Things I'm working on</a>
+        <a href="Random.html">Random</a>
+    </div>
+
+    <div class="checklist-container">
         <h1>What I'm working on!</h1>
 
         <ul class="checklist">
             <li class="checklist-item">
-                <input type="checkbox" checked> <!-- This one is checked -->
+                <input type="checkbox" checked> <!-- Checked -->
                 <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank" rel="noopener noreferrer">
                     Cloud Practitioner @AWS
                 </a>
             </li>
             <li class="checklist-item">
-                <input type="checkbox"> <!-- This one is unchecked -->
+                <input type="checkbox"> <!-- Unchecked -->
                 <a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank" rel="noopener noreferrer">
                     Associate Developer @AWS
                 </a>
             </li>
             <li class="checklist-item">
-                <input type="checkbox" checked> <!-- This one is checked -->
+                <input type="checkbox" checked> <!-- Checked -->
                 <a href="https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments" target="_blank" rel="noopener noreferrer">
                     PSM @Scrum.org
                 </a>
             </li>
         </ul>
     </div>
+
 </body>
 </html>
