@@ -39,6 +39,7 @@
         .checklist-item {
             display: flex;
             align-items: center;
+            justify-content: flex-start; /* Align items at the start */
             margin-bottom: 20px;
             font-size: 2rem;
         }
@@ -48,12 +49,16 @@
             width: 40px;
             height: 40px;
             pointer-events: none; /* Make the checkbox non-clickable */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .checklist-item a {
             text-decoration: none;
             color: #00D1FF;
             font-weight: 600;
+            padding-left: 10px; /* Add padding to create space from checkbox */
         }
 
         .checklist-item a:hover {
@@ -65,7 +70,7 @@
 <body>
 
     <div class="navigation_bar">
-        <a href="index.html" class="active">Homepage</a>
+        <a href="index.html">Homepage</a>
         <a href="about.html">About Me</a>
         <a href="contact.html">Contact Me</a>
         <a href="project.html">Projects</a>
@@ -79,6 +84,13 @@
         <ul class="checklist">
             <li class="checklist-item">
                 <input type="checkbox" checked> <!-- Checked -->
+                <a href="https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments" target="_blank" rel="noopener noreferrer">
+                    PSM @Scrum.org
+                </a>
+            </li>
+            <li class="checklist-item">
+                <input type="checkbox"> <!-- Checked -->
+
                 <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank" rel="noopener noreferrer">
                     Cloud Practitioner @AWS
                 </a>
@@ -87,12 +99,6 @@
                 <input type="checkbox"> <!-- Unchecked -->
                 <a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank" rel="noopener noreferrer">
                     Associate Developer @AWS
-                </a>
-            </li>
-            <li class="checklist-item">
-                <input type="checkbox" checked> <!-- Checked -->
-                <a href="https://www.scrum.org/professional-scrum-certifications/professional-scrum-master-assessments" target="_blank" rel="noopener noreferrer">
-                    PSM @Scrum.org
                 </a>
             </li>
         </ul>
